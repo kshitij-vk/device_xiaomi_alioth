@@ -65,5 +65,9 @@ PRODUCT_SOONG_NAMESPACES += \
 PRODUCT_PACKAGES += \
     RemovePackages
 
+# WiFi HotSpot
+PRODUCT_PACKAGES += \
+    TargetWifiOverlay
+
 # Inherit from vendor blobs
 $(call inherit-product, vendor/xiaomi/alioth/alioth-vendor.mk)
