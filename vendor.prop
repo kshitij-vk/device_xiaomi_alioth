@@ -34,6 +34,7 @@ vendor.audio_hal.period_multiplier=2
 
 # Audio hardware
 ro.hardware.audio.primary=alioth
+ro.config.media_vol_steps=16
 
 # Display
 ro.vendor.display.paneltype=2
