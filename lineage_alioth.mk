@@ -28,3 +28,7 @@ PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
     BuildFingerprint=POCO/alioth_global/alioth:13/TKQ1.221114.001/V816.0.3.0.TKHMIXM:user/release-keys
+
+# Additional flags
+TARGET_BUILD_DEVICE_AS_WEBCAM := true
+TARGET_DISABLE_EPPE := true
