@@ -11,7 +11,7 @@ TARGET_IS_VAB := true
 $(call inherit-product, device/xiaomi/sm8250-common/kona.mk)
 
 # Miuicamera
-$(call inherit-product, vendor/xiaomi/camera/miuicamera.mk)
+#$(call inherit-product, vendor/xiaomi/camera/miuicamera.mk)
 
 # AAPT
 PRODUCT_AAPT_CONFIG := normal
@@ -50,6 +50,10 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/pocket/privapp-permissions-pocketmode.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/privapp-permissions-pocketmode.xml
+
+
+# Libinit
+$(call soong_config_set,libinit,vendor_init_lib,//$(LOCAL_PATH):init_xiaomi_alioth)
 
 # Shipping API level
 PRODUCT_SHIPPING_API_LEVEL := 30
