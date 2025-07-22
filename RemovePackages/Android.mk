@@ -53,8 +53,6 @@ LOCAL_OVERRIDES_PACKAGES := \
     Videos \
     VZWAPNLib \
     VzwOmaTrigger \
-    YouTube \
-    YouTubeMusicPrebuilt
 LOCAL_UNINSTALLABLE_MODULE := true
 LOCAL_CERTIFICATE := PRESIGNED
 LOCAL_SRC_FILES := /dev/null
